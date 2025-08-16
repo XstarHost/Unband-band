@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.xstarstore" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Xstar Store</name>
+    <description>Aplikasi Xstar Store untuk login dan teks band/unband</description>
+    <author email="admin@example.com" href="http://example.com">Xstar Store Dev</author>
+
+    <!-- Halaman utama -->
+    <content src="index.html" />
+
+    <!-- Preferensi umum -->
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="SplashScreen" value="none" />
+    <preference name="BackgroundColor" value="0xff000000" /> <!-- Hitam -->
+
+    <!-- Allow semua navigasi (bisa disesuaikan lebih ketat) -->
+    <allow-navigation href="*" />
+    <access origin="*" />
+
+    <!-- Ikon (opsional, kalau punya file icon.png) -->
+    <!--
+    <icon src="res/icon.png" />
+    -->
+
+</widget>

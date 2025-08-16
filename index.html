@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xstar Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Halaman Login -->
+  <div class="card" id="loginCard">
+    <h1 class="title">Login</h1>
+    <p class="subtitle">Sign in to continue.</p>
+    <form id="loginForm" autocomplete="off">
+      <label for="username">Username</label>
+      <input class="input" id="username" type="text" placeholder="Xstar Store" required>
+      <label for="password">Password</label>
+      <div class="field">
+        <input class="input" id="password" type="password" placeholder="•••••••" required>
+        <button type="button" class="toggle-pass" id="togglePass">Show</button>
+      </div>
+      <button class="btn" type="submit">Log in</button>
+    </form>
+    <div class="meta">© Xstar Store</div>
+    <a class="link" href="#" onclick="alert('Hubungi admin untuk reset password.');return false;">Forgot Password?</a>
+  </div>
+
+  <!-- Halaman Menu -->
+  <div class="card" id="menuPage">
+    <h1>Menu</h1>
+    <div class="section">Teks Unband :</div>
+    <div class="buttons">
+      <button class="menu-btn">Unband 1</button>
+      <button class="menu-btn">Unband 2</button>
+    </div>
+    <div class="section">Teks Band :</div>
+    <div class="buttons">
+      <button class="menu-btn">band 1</button>
+      <button class="menu-btn">band 2</button>
+      <button class="menu-btn">band 3</button>
+    </div>
+    <div class="meta">© Xstar Store</div>
+  </div>
+
+  <!-- Halaman Text Viewer -->
+  <div class="card" id="textPage">
+    <h1 id="textTitle">Judul</h1>
+    <pre id="textContent"></pre>
+    <button class="btn" onclick="copyText()">Salin Teks</button>
+    <div id="usage"></div>
+    <button class="btn" style="background:#333;" onclick="backMenu()">Kembali</button>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
